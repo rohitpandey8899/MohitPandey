@@ -1,0 +1,167 @@
+<html lang="eng">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+		<link rel="shortcut icon" type="image/x-icon" href="logo.png">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+<title>Mohit Pandey</title>
+
+<style>
+
+a:link {
+  color:#000000;
+}
+
+/* visited link */
+a:visited {
+  color:#000000;
+}
+
+/* mouse over link */
+a:hover {
+  color:#ffffff;
+}
+
+/* selected link */
+a:active {
+  color:#000000;
+}
+
+
+#copyright{
+margin: 0;
+  position: absolute;
+  bottom:10%;
+  left:41%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+font-size:10px;
+}
+
+body{
+background: hsla(152, 100%, 50%, 1);
+
+background: linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#00FF87", endColorstr="#60EFFF", GradientType=1 );
+}
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left:35%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+i{
+padding:20px;
+}
+
+ul#menu li { display:inline; } 
+
+
+h1,p{
+font-family:Verdana;
+padding:2px;
+margin:2px;
+}
+
+img{
+width:100;
+height:100;
+border-radius:50%;
+padding:7px;
+border: 2px solid #ffff;
+}
+
+@media screen and (max-width:500px) {
+
+  .vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left:1%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#copyright{
+margin: 0;
+  position: absolute;
+  bottom:10%;
+  left:20%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+font-size:10px;
+}
+
+}
+
+</style>
+
+
+<script>
+var i = 0; 			// Start Point
+var images = [];	// Images Array
+var time = 3000;	// Time Between Switch
+	 
+// Image List
+images[0] = "img1.jpg";
+images[1] = "img2.jpg";
+images[2] = "img3.jpg";
+images[3] = "img4.jpg";
+images[4] = "img5.jpg";
+images[5] = "img6.jpg";
+images[6] = "img7.jpg";
+
+// Change Image
+function changeImg(){
+	document.slide.src = images[i];
+
+	// Check If Index Is Under Max
+	if(i < images.length - 1){
+	  // Add 1 to Index
+	  i++; 
+	} else { 
+		// Reset Back To O
+		i = 0;
+	}
+
+	// Run function every x seconds
+	setTimeout("changeImg()", time);
+}
+
+// Run function when page loads
+window.onload=changeImg;
+
+</script>
+
+</head>
+<body>
+<div class="vertical-center">
+<center>
+<a href="">
+	<img name="slide">
+		</a>
+<h1>hello !</h1>
+<p>Actor | Model | Writer</p>
+<p style="font-size:10px;">+91 82183 57140 , +91 81715 14446</p>
+<ul style="list-style-type:none;" id="menu">
+	<li><a href="https://www.instagram.com/mohit_pandeyofficial"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+	<li><a href="https://m.facebook.com/mohit.pandey.980967"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+	<li><a href="https://m.youtube.com/channel/UC2fbne-vwgldzcATznN7NYw"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a></li>
+	<li><a href="#"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+	<li><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+</ul>
+</center>
+</div>
+<center>
+						<p id="copyright">&copy; Untitled. Design: <a href="rohitpandey.tech"> Rohit Pandey</a> (2018)-(2021)</p>
+						</center>
+</body>
+</html>
